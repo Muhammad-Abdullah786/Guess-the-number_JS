@@ -1,5 +1,5 @@
 
-console.log("Guess the Number Between 1 tot 100")
+document.write("Guess the Number Between 1 tot 100")
 const random = () => {
   return Math.random() * 100;
 }
@@ -12,16 +12,16 @@ a = Number.parseInt(a)
 while (a != num){
   a = prompt("enter your guess!!  :")
   if (a < num) {
-    console.log("the orignal number is larger \n try again!")
+    console.log("the orignal number is larger <br> try again! <br>")
   }
   else if (a > num) {
-    console.log("the orignal number is smaller \n try again")
+    console.log("the orignal number is smaller <br> try again <br>")
   }
   else {
-    console.log("your guess is correct!! \n Congratulation  ")
+    console.log("your guess is correct!! <br> Congratulation  <br>")
   }
   
   chances = chances + 1;
 }
 
-console.log("Number of Guess:: "+ chances);
+document.write("Number of Guess:: "+ chances);
